@@ -1,0 +1,69 @@
+$G0: #30B639;
+$G1: #0B5710;
+$G2: #52DB5B;
+$G3: #9EF2A3;
+
+$B0: #3B41A1; //Blue */
+$B1: #13164D;
+$B2: #5E64CC;
+$B3: #A6A9EC;
+
+$Y0: #E8BB3D; //Yellow */
+$Y1: #6B4F00;
+$Y2: #FFD55F;
+$Y3: #FFE8A6;
+
+$R0: #E8423D; //Red */
+$R1: #6F110E;
+$R2: #FF635F;
+$R3: #FFA9A6;
+
+$W0: #000000; //Grey */
+$W1: #555555;
+$W2: #D5D6D5;
+$W3: #FFFFFF;
+
+#logo{
+    min-height: 20px
+}
+#crimson{
+    color: $R1;
+    border-color: $R1;
+}
+
+#red{
+    color: $W0;
+    border-color: $R0;
+    background-color: $R3;
+    margin-left: 2rem;
+    text-decoration-color: $W0;
+    float: right; 
+}
+
+#yellow{
+    color: $W0;
+    border-color: $Y0;
+    background-color: $Y3;
+    margin-left: 2rem;
+    text-decoration-color: $W0;
+    float: right; 
+}
+
+#green{
+    color: $W0;
+    border-color: $G0;
+    background-color: $G3;
+    margin-left: 2rem;
+    text-decoration-color: $W0;
+    float: right; 
+}
+
+#blue{
+    color: $W0;
+    border-color: $B0;
+    background-color: $B3;
+    margin-left: 2rem;
+    text-decoration-color: $W0;
+    float: right; 
+}
+@import "file:///Users/ChloeYu/bootstrap-4.2.1/scss/bootstrap.scss"
