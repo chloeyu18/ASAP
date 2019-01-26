@@ -26,44 +26,32 @@ $W3: #FFFFFF;
 #logo{
     min-height: 20px
 }
-#crimson{
-    color: $R1;
-    border-color: $R1;
-}
 
-#red{
-    color: $W0;
+a#red:hover{
+    color: $R0 !important;
+    background-color: $R3 !important;
+    border: 1px solid $R0;
     border-color: $R0;
-    background-color: $R3;
-    margin-left: 2rem;
-    text-decoration-color: $W0;
-    float: right; 
 }
 
-#yellow{
-    color: $W0;
-    border-color: $Y0;
+a#yellow:hover{
+    color: $Y0 !important;
     background-color: $Y3;
-    margin-left: 2rem;
-    text-decoration-color: $W0;
-    float: right; 
+    border: 1px solid $Y0;
+    border-color: $Y0;
 }
 
-#green{
-    color: $W0;
-    border-color: $G0;
+a#green:hover{
+    color: $G0 !important;
     background-color: $G3;
-    margin-left: 2rem;
-    text-decoration-color: $W0;
-    float: right; 
+    border: 1px solid $G0;
+    border-color: $G0;
 }
 
-#blue{
-    color: $W0;
-    border-color: $B0;
+a#blue:hover{
+    color: $B0 !important;
     background-color: $B3;
-    margin-left: 2rem;
-    text-decoration-color: $W0;
-    float: right; 
+    border: 1px solid $B0;
+    border-color: $B0;
 }
 @import "file:///Users/ChloeYu/bootstrap-4.2.1/scss/bootstrap.scss"

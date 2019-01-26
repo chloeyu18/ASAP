@@ -3,45 +3,32 @@
   min-height: 20px;
 }
 
-#crimson {
-  color: #6F110E;
-  border-color: #6F110E;
-}
-
-#red {
-  color: #000000;
+a#red:hover {
+  color: #E8423D !important;
+  background-color: #FFA9A6 !important;
+  border: 1px solid #E8423D;
   border-color: #E8423D;
-  background-color: #FFA9A6;
-  margin-left: 2rem;
-  text-decoration-color: #000000;
-  float: right;
 }
 
-#yellow {
-  color: #000000;
-  border-color: #E8BB3D;
+a#yellow:hover {
+  color: #E8BB3D !important;
   background-color: #FFE8A6;
-  margin-left: 2rem;
-  text-decoration-color: #000000;
-  float: right;
+  border: 1px solid #E8BB3D;
+  border-color: #E8BB3D;
 }
 
-#green {
-  color: #000000;
-  border-color: #30B639;
+a#green:hover {
+  color: #30B639 !important;
   background-color: #9EF2A3;
-  margin-left: 2rem;
-  text-decoration-color: #000000;
-  float: right;
+  border: 1px solid #30B639;
+  border-color: #30B639;
 }
 
-#blue {
-  color: #000000;
-  border-color: #3B41A1;
+a#blue:hover {
+  color: #3B41A1 !important;
   background-color: #A6A9EC;
-  margin-left: 2rem;
-  text-decoration-color: #000000;
-  float: right;
+  border: 1px solid #3B41A1;
+  border-color: #3B41A1;
 }
 
 /*!
