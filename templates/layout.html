@@ -24,7 +24,7 @@
                 </button>
                 
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" id="red" href="{{ url_for('about') }}">About</a>
                         </li>
@@ -37,12 +37,12 @@
                         <li class="nav-item">
                             <a class="nav-link" id="green" href="{{ url_for('spotlight') }}">Spotlight</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" style="color: grey" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <li class="nav-item dropdown" id="navDropdown">
+                            <a class="nav-link dropdown-toggle" id="black" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Events
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" style="color: #000000" href="{{ url_for('productions') }}">Productions</a>
+                            <div class="dropdown-menu" id="dropdown" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" id="black" href="{{ url_for('productions') }}">Productions</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" id="red" href="{{ url_for('eastside') }}">The East Side</a>
                                 <a class="dropdown-item" id="blue" href="{{ url_for('artsfirst') }}">Arts First</a>
@@ -53,8 +53,8 @@
                 </div>
             </nav>
         </div>
-        <div>
-            <h1> {% block heading %} {% endblock %}</h1>
+        <div style="margin-top: 60px">
+            <h1 class="heading"> {% block heading %} {% endblock %} </h1>
         </div>
         <div>
             {% block body %}

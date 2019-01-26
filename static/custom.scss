@@ -23,35 +23,116 @@ $W1: #555555;
 $W2: #D5D6D5;
 $W3: #FFFFFF;
 
-#logo{
-    min-height: 20px
-}
+#navDropdown {
+    position: relative;
+    /* containing block for positioning */
+    display: block;
+    float: right;
+    list-style: none;
+    padding: 0;
+    margin: 0 65px 0 0;
+  }
 
+a#black:hover{
+    color:$W1;
+    background-color: $W2;
+    border: 1px solid $W0;
+}
 a#red:hover{
-    color: $R0 !important;
-    background-color: $R3 !important;
+    color: $R1;
+    background-color: $R3;
     border: 1px solid $R0;
-    border-color: $R0;
 }
 
 a#yellow:hover{
-    color: $Y0 !important;
+    color: $Y1;
     background-color: $Y3;
     border: 1px solid $Y0;
-    border-color: $Y0;
 }
 
 a#green:hover{
-    color: $G0 !important;
+    color: $G1;
     background-color: $G3;
     border: 1px solid $G0;
-    border-color: $G0;
 }
 
 a#blue:hover{
-    color: $B0 !important;
+    color: $B1;
     background-color: $B3;
     border: 1px solid $B0;
-    border-color: $B0;
+}
+
+.heading{
+    text-align: center;
+    color: $W0;
+    font-family: sans-serif;
+}
+
+.margin{
+    margin: 0 50px;
+}
+
+.text{
+    font-family: serif;
+    font-size: 13pt;
+    color: $W1;
+}
+
+div.gallery {
+    border: 1px solid $W2;
+}
+  
+div.gallery:hover {
+    border: 1px solid $W0;
+}
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+  
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.nameCap{
+    color: $W0;
+    text-align: center;
+    font-size: 16pt; 
+    font-weight: bold; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.roleCap{
+    color: grey;
+    text-align: center;
+    font-size: 13pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+  
+.responsive {
+    padding: 6px;
+    float: left;
+    width: 24.99999%;
+}
+  
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+}
+  
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 @import "file:///Users/ChloeYu/bootstrap-4.2.1/scss/bootstrap.scss"

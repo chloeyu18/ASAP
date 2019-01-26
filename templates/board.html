@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Board Members
+{% endblock %}
+
+{% block heading %}
+    Meet <span style="color:#E8423D">A</span>
+    <span style="color:#3B41A1">S</span>
+    <span style="color:#E8BB3D">A</span>
+    <span style="color:#30B639">P's</span>
+    Executive Board
+{% endblock %}
+
+{% block body %}
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="{{ url_for('static', filename='eric.jpg') }}">
+            <img src="{{ url_for('static', filename='eric.jpg') }}" alt="Eric Cheng, Co-President" width="600" height="400">
+        </a>
+        <div class="desc">
+            <span class="nameCap">Eric Cheng</span>
+            <br><span class="roleCap">Co-President</span>
+        </div>
+    </div>
+</div>
+      
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="{{ url_for('static', filename='julia.jpg') }}">
+            <img src="{{ url_for('static', filename='julia.jpg') }}" alt="Julia Riew, Co-President" width="600" height="400">
+        </a>
+        <div class="desc">
+            <span class="nameCap">Julia Riew</span>
+            <br><span class="roleCap">Co-President</span>
+        </div>
+    </div>
+</div>
+      
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="{{ url_for('static', filename='chloe.jpg') }}">
+            <img src="{{ url_for('static', filename='chloe.jpg') }}" alt="Chloe Yu, Vice-President" width="600" height="400">
+        </a>
+        <div class="desc">
+            <span class="nameCap">Chloe Yu</span>
+            <br><span class="roleCap">Vice President</span>
+        </div>
+    </div>
+</div>
+
+<div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="{{ url_for('static', filename='yena.jpg') }}">
+                <img src="{{ url_for('static', filename='yena.jpg') }}" alt="Yena Cho, Treasurer" width="600" height="400">
+            </a>
+            <div class="desc">
+                <span class="nameCap">Yena Cho</span>
+                <br><span class="roleCap">Treasurer</span>
+            </div>
+        </div>
+    </div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="{{ url_for('static', filename='phiroze.jpg') }}">
+            <img src="{{ url_for('static', filename='phiroze.jpg') }}" alt="Phiroze Parasnis, Outreach Chair" width="600" height="400">
+        </a>
+        <div class="desc">
+            <span class="nameCap">Phiroze Parasnis</span>
+            <br><span class="roleCap">Outreach Chair</span>
+        </div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="{{ url_for('static', filename='jennifer.jpg') }}">
+            <img src="{{ url_for('static', filename='jennifer.jpg') }}" alt="Jennifer Lee, Secretary" width="600" height="400">
+        </a>
+        <div class="desc">
+            <span class="nameCap">Jennifer Lee</span>
+            <br><span class="roleCap">Secretary</span>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+{% endblock %}
