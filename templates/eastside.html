@@ -5,8 +5,88 @@
 {% endblock %}
 
 {% block heading %}
-    The East Side
+    <div class="imgSlideshow" style="margin-top: -60px">
+        <img class="slides" src="{{ url_for('static', filename='eastside/poster.jpg') }}">
+        <img class="slides" src="{{ url_for('static', filename='eastside/cast.jpg') }}">
+        <img class="slides" src="{{ url_for('static', filename='eastside/everyone.jpg') }}">
+    </div>
+    <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("slides");
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 7000); // Change image every 7 seconds
+    }
+    </script> <br/><br/>
+    <span style="color: #E8423D; font-style: italic">The East Side</span>
 {% endblock %}
 
 {% block body %}
+<div class="margin" style="text-align: center">
+    <p class="text">
+        <i>The East Side</i>, a new coming-of-age musical comedy, tells the story of 17-year-old Ryan 
+        and his developing identity as an American-born Chinese, artist, and son. As New York City 
+        Chinatown becomes increasingly gentrified, Ryan and his immigrant mother, Ms. Chen, must 
+        decide whether to reimagine their restaurant to appeal to American interests, or go bankrupt. 
+        Jaded by life at the restaurant, distracted by romance, and full of idealistic fantasies, 
+        Ryan struggles to balance spending time with friends, studying for the SATs, working at the 
+        Dumpling House, and investing in his hobby - the visual arts. <i>The East Side</i> explores themes 
+        of authenticity, identity, acceptance, and love of all kinds.
+    </p>
+</div><br>
+
+<div class="margin" style="text-align: center">
+    <h2>Reviews</h2>
+    <a target="_blank" href="https://news.harvard.edu/gazette/story/2019/04/east-side-story-a-harvard-musical/">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="{{ url_for('static', filename='eastside/gazette.jpg') }}" alt="'East Side' Story" width="120" height="80">
+            </div>
+            <div class="grid-item">
+                <span>‘East Side’ Story</span>
+                <br><span class="grid-caption">The Harvard Gazette</span>
+            </div>
+        </div>
+    </a>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <a target="_blank" href="https://www.thecrimson.com/article/2019/4/25/the-east-side-musical-explores-struggle-of-living-in-west-review/">
+                <img src="{{ url_for('static', filename='eastside/star.jpg') }}" alt="‘The East Side’ Explores the Struggle of Living in the West" width="120" height="80">
+            </a>
+        </div>
+        <div class="grid-item">
+            <span>‘The East Side’ Explores the Struggle of Living in the West</span>
+            <br><span class="grid-caption">The Harvard Crimson</span>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <a target="_blank" href="https://www.thecrimson.com/article/2019/4/9/the-east-side-preview-dumplings-love-gentrification/">
+            <img src="{{ url_for('static', filename='eastside/last.jpg') }}" alt="American Identity Onstage" width="120" height="80">
+            </a>
+        </div>
+        <div class="grid-item">
+            <span>American Identity Onstage</span>
+            <br><span class="grid-caption">The Harvard Crimson</span>
+        </div>
+    </div>
+</div><br/>
+
+<div class="margin" style="text-align: center">
+    <h2>Connect With Us</h2>
+    <p>
+        Questions about <i>The East Side</i>? Check out our <a href="https://www.facebook.com/harvardeastside/">Facebook Page</a>
+        or email <a href="mailto:asianstudentartsproject@gmail.com" target="_top">asianstudentartsproject@gmail.com</a>!
+    </p>
+</div>
 {% endblock %}

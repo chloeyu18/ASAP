@@ -23,6 +23,17 @@ $W1: #555555;
 $W2: #D5D6D5;
 $W3: #FFFFFF;
 
+#eastsidehead{
+    color: rgb(90, 48, 168); 
+    font-style: italic;
+    font-size: 20pt;
+}
+
+#chardesc{
+    font-weight: bold;
+    color: black;
+}
+
 #navDropdown {
     position: relative;
     /* containing block for positioning */
@@ -79,6 +90,9 @@ a#blue:hover{
 }
 
 div.gallery {
+    margin: 5px;
+    float: left;
+    width: 200px;
     border: 1px solid $W2;
 }
   
@@ -99,7 +113,7 @@ div.desc {
 .nameCap{
     color: $W0;
     text-align: center;
-    font-size: 16pt; 
+    font-size: 14pt; 
     font-weight: bold; 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -107,32 +121,9 @@ div.desc {
 .roleCap{
     color: grey;
     text-align: center;
-    font-size: 13pt;
+    font-size: 12pt;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: capitalize;
 }
   
-.responsive {
-    padding: 6px;
-    float: left;
-    width: 24.99999%;
-}
-  
-@media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-}
-  
-@media only screen and (max-width: 500px) {
-    .responsive {
-        width: 100%;
-    }
-}
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 @import "file:///Users/ChloeYu/bootstrap-4.2.1/scss/bootstrap.scss"

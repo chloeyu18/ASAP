@@ -36,3 +36,7 @@ def productions():
 @app.route('/spotlight')
 def spotlight():
     return render_template("spotlight.html")
+
+@app.route('/eastside-character-description')
+def characters():
+    return render_template("characters.html")
