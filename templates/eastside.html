@@ -25,12 +25,15 @@
         x[myIndex-1].style.display = "block";  
         setTimeout(carousel, 7000); // Change image every 7 seconds
     }
-    </script> <br/><br/>
+    </script> <br/>
     <span style="color: #E8423D; font-style: italic">The East Side</span>
 {% endblock %}
 
 {% block body %}
 <div class="margin" style="text-align: center">
+    <h6>
+        Written by Julia Riew, John Lim, and Jared Leong
+    </h6>
     <p class="text">
         <i>The East Side</i>, a new coming-of-age musical comedy, tells the story of 17-year-old Ryan 
         and his developing identity as an American-born Chinese, artist, and son. As New York City 
@@ -44,9 +47,10 @@
 </div><br>
 
 <div class="margin" style="text-align: center">
-    <h2>Reviews</h2>
+    <h2 style="color:#3B41A1">Reviews</h2>
+
     <a target="_blank" href="https://news.harvard.edu/gazette/story/2019/04/east-side-story-a-harvard-musical/">
-        <div class="grid-container">
+        <div class="grid-article">
             <div class="grid-item">
                 <img src="{{ url_for('static', filename='eastside/gazette.jpg') }}" alt="'East Side' Story" width="120" height="80">
             </div>
@@ -57,30 +61,108 @@
         </div>
     </a>
 
-    <div class="grid-container">
-        <div class="grid-item">
-            <a target="_blank" href="https://www.thecrimson.com/article/2019/4/25/the-east-side-musical-explores-struggle-of-living-in-west-review/">
+    <a target="_blank" href="https://www.thecrimson.com/article/2019/4/25/the-east-side-musical-explores-struggle-of-living-in-west-review/">
+        <div class="grid-article">
+            <div class="grid-item">
                 <img src="{{ url_for('static', filename='eastside/star.jpg') }}" alt="‘The East Side’ Explores the Struggle of Living in the West" width="120" height="80">
-            </a>
+            </div>
+            <div class="grid-item">
+                <span>‘The East Side’ Explores the Struggle of Living in the West</span>
+                <br><span class="grid-caption">The Harvard Crimson</span>
+            </div>
         </div>
-        <div class="grid-item">
-            <span>‘The East Side’ Explores the Struggle of Living in the West</span>
-            <br><span class="grid-caption">The Harvard Crimson</span>
-        </div>
-    </div>
+    </a>
 
-    <div class="grid-container">
-        <div class="grid-item">
-            <a target="_blank" href="https://www.thecrimson.com/article/2019/4/9/the-east-side-preview-dumplings-love-gentrification/">
-            <img src="{{ url_for('static', filename='eastside/last.jpg') }}" alt="American Identity Onstage" width="120" height="80">
-            </a>
+    <a target="_blank" href="https://www.thecrimson.com/article/2019/4/9/the-east-side-preview-dumplings-love-gentrification/">
+        <div class="grid-article">
+            <div class="grid-item">
+                <img src="{{ url_for('static', filename='eastside/last.jpg') }}" alt="American Identity Onstage" width="120" height="80">
+            </div>
+            <div class="grid-item">
+                <span>American Identity Onstage</span>
+                <br><span class="grid-caption">The Harvard Crimson</span>
+            </div>
         </div>
-        <div class="grid-item">
-            <span>American Identity Onstage</span>
-            <br><span class="grid-caption">The Harvard Crimson</span>
+    </a>
+
+    <a target="_blank" href="http://berkeleybeacon.com/senior-co-writes-harvard-musical-to-raise-asian-representation-in-theater/">
+        <div class="grid-article">
+            <div class="grid-item">
+                <img src="{{ url_for('static', filename='eastside/jared.jpg') }}" alt="Senior co-writes Harvard musical to raise Asian representation in theater" width="120" height="80">
+            </div>
+            <div class="grid-item">
+                <span>Senior Co-writes Harvard Musical to Raise Asian Representation in Theater</span>
+                <br><span class="grid-caption">The Berkeley Beacon</span>
+            </div>
+        </div>
+    </a>
+</div><br/>
+
+<div class="margin" style="text-align: center">
+    <h2 style="color:#E8BB3D">Meet the Team</h2>
+    <div class="row" style="justify-content: center;">
+        <div class="column">
+            <h2>Cast</h2>
+            <p>
+                Jason Yoo ..... Ryan<br/>
+                Boyoung Choi ..... Ms. Chen<br/>
+                Phiroze Parasnis ..... Patrick<br/>
+                Ramona Park ..... Vera<br/>
+                Rocket Claman ..... Michelle<br/>
+                Gayoung Choi ..... Ms. Song<br/>
+                Kim Phan ..... Ms. Phan<br/>
+                Simone Chu ..... Ms. Choi<br/>
+                Cade Herrera ..... Everyman<br/>
+                Vincent Pan ..... Vincent<br/>
+                Chuck See ..... Chuck
+            </p>
+        </div>
+        <div class="column">
+            <h2>Staff</h2>
+            <p>
+                KeeHup Yong ..... Director<br/>
+                Michael Yin ..... Asst. Director<br/>
+                David Moberg ..... Stage Manager<br/>
+                Connie Zhao ..... Exec. Producer<br/>
+                Chloe Yu ..... Tech Producer<br/>
+                Sherry Gao ..... Finance Producer<br/>
+                Angela Kim  ..... Pub Producer<br/>
+                Julia Riew ..... Co-Music Director<br/>
+                Ian Chan ..... Co-Music Director<br/>
+                Grant Riew ..... Band Director<br/>
+                Jennifer Chu ..... Choreographer<br/>
+                Emory Sabatini ..... Co-Tech Director<br/>
+                Odessa Deng ..... Co-Tech Director<br/>
+                Kathleen Zhou ..... Light Designer<br/>
+                Liana Chow ..... Scenic Designer<br/>
+                Grace Zhang Li ..... Scenic Painter<br/>
+                Sung Ahn ..... Sound Designer<br/>
+                Bianca Rodriguez ..... Sound Engineer<br/>
+                Serena Chen ..... Props Designer<br/>
+                Issi Liao ..... Costume Designer
+
+            </p>
+        </div>
+        <div class="column">
+            <h2>Band</h2>
+            <p>
+                Anna Lee ..... Violin<br/>
+                Albert Shin ..... Violin<br/>
+                Andrew Lee ..... Violin<br/>
+                Austin Kwoun ..... Violin<br/>
+                Odessa Deng ..... Violin<br/>
+                Noah Lee ..... Cello<br/>
+                Max Bobby ..... Cello<br/>
+                Ila Shon ..... Cello<br/>
+                Ian Chan ..... Piano<br/>
+                Bradley Riew ..... Piano<br/>
+                Andy Kim ..... Drums<br/>
+                Ethan Fields ..... Guitar<br/>
+                Isaac Ash ..... Bass Guitar<br/>
+            </p>
         </div>
     </div>
-</div><br/>
+</div> <br/> <br/>
 
 <div class="margin" style="text-align: center">
     <h2>Connect With Us</h2>

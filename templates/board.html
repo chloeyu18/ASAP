@@ -12,64 +12,49 @@
     Executive Board
 {% endblock %}
 
-{% block body %}      
-<div class="gallery">
-    <a target="_blank" href="{{ url_for('static', filename='board/julia.jpg') }}">
-        <img src="{{ url_for('static', filename='board/julia.jpg') }}" alt="Julia Riew, Co-President" width="600" height="400">
-    </a>
-    <div class="desc">
-        <span class="nameCap">Julia<br/>Riew</span>
-        <br><span class="roleCap">Co-President</span>
+{% block body %}
+<div class="row" style="justify-content: center;">
+    <div class="column">
+        <div class="container">
+            <img class="pic" src="{{ url_for('static', filename='board/julia.jpg') }}">
+            <div class="overlay">
+                <div class="overlay-text">Julia Riew<br>Co-President</div>
+            </div>
+        </div><br>
+        <div class="container">
+            <img class="pic" src="{{ url_for('static', filename='board/phiroze.jpg') }}">
+            <div class="overlay">
+                <div class="overlay-text">Phiroze Parasnis<br>Outreach Coordinator</div>
+            </div>
+        </div>
     </div>
-</div>
-
-<div class="gallery">
-    <a target="_blank" href="{{ url_for('static', filename='board/eric.jpg') }}">
-        <img src="{{ url_for('static', filename='board/eric.jpg') }}" alt="Eric Cheng, Co-President" width="600" height="400">
-    </a>
-    <div class="desc">
-        <span class="nameCap">Eric<br/>Cheng</span>
-        <br><span class="roleCap">Co-President</span>
+    <div class="column">
+            <div class="container">
+                <img class="pic" src="{{ url_for('static', filename='board/eric.jpg') }}">
+                <div class="overlay">
+                    <div class="overlay-text">Eric Cheng<br>Co-President</div>
+                </div>
+            </div><br>
+            <div class="container">
+                <img class="pic" src="{{ url_for('static', filename='board/jennifer.jpg') }}">
+                <div class="overlay">
+                    <div class="overlay-text">Jennifer Lee<br>Secretary</div>
+                </div>
+            </div>
     </div>
-</div>
-      
-<div class="gallery">
-    <a target="_blank" href="{{ url_for('static', filename='board/chloe.jpg') }}">
-        <img src="{{ url_for('static', filename='board/chloe.jpg') }}" alt="Chloe Yu, Vice President" width="600" height="400">
-    </a>
-    <div class="desc">
-        <span class="nameCap">Chloe<br/>Yu</span>
-        <br><span class="roleCap">Vice-President</span>
-    </div>
-</div>
-
-<div class="gallery">
-    <a target="_blank" href="{{ url_for('static', filename='board/yena.jpg') }}">
-        <img src="{{ url_for('static', filename='board/yena.jpg') }}" alt="Yena Cho, Treasurer" width="600" height="400">
-    </a>
-    <div class="desc">
-        <span class="nameCap">Yena<br/>Cho</span>
-        <br><span class="roleCap">Treasurer</span>
-    </div>
-</div>
-
-<div class="gallery">
-    <a target="_blank" href="{{ url_for('static', filename='board/phiroze.jpg') }}">
-        <img src="{{ url_for('static', filename='board/phiroze.jpg') }}" alt="Phiroze Parasnis, Outreach Chair" width="600" height="400">
-    </a>
-    <div class="desc">
-        <span class="nameCap">Phiroze<br/>Parasnis</span>
-        <br><span class="roleCap">Outreach Chair</span>
-    </div>
-</div>
-
-<div class="gallery">
-    <a target="_blank" href="{{ url_for('static', filename='board/jennifer.jpg') }}">
-        <img src="{{ url_for('static', filename='board/jennifer.jpg') }}" alt="Jennifer Lee, Secretary" width="600" height="400">
-    </a>
-    <div class="desc">
-        <span class="nameCap">Jennifer<br/>Lee</span>
-        <br><span class="roleCap">Secretary</span>
+    <div class="column">
+            <div class="container">
+                <img class="pic" src="{{ url_for('static', filename='board/chloe.jpg') }}">
+                <div class="overlay">
+                    <div class="overlay-text">Chloe Yu<br>Vice President</div>
+                </div>
+            </div><br>
+            <div class="container">
+                <img class="pic" src="{{ url_for('static', filename='board/yena.jpg') }}">
+                <div class="overlay">
+                    <div class="overlay-text">Yena Cho<br>Treasurer</div>
+                </div>
+            </div>
     </div>
 </div>
 {% endblock %}

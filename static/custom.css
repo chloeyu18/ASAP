@@ -112,16 +112,25 @@ div.desc {
   height: auto;
 }
 
-.grid-container {
+.grid-article {
   display: grid;
   grid-template-columns: 120px auto;
   margin: 10px;
   border: 1px solid #D5D6D5;
+  grid-gap: 20px;
 }
 
-.grid-container:hover {
+.grid-article:hover {
   border: 1px solid #000000;
+  background-color: #D5D6D5;
 }
+
+/* .grid-photobook {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  border: 1px solid #D5D6D5;
+  grid-gap: 5px;
+} */
 
 .grid-item {
   margin: 10px;
@@ -134,6 +143,56 @@ div.desc {
   font-size: 16px;
   text-align: left;
 }
+
+.column {
+  float: left;
+  width: auto;
+  padding: 15px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.pic {
+  width:200px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  right: 0;
+  height: 200px;
+  width: 200px;
+  opacity: 0;
+  background-color:#D5D6D5;
+}
+
+.container:hover .overlay {
+  opacity:0.9;
+}
+
+.overlay-text {
+  color: black;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
